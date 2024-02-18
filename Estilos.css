@@ -681,17 +681,17 @@ hr {
     /*Footer*/
 
     .footer-content h3{
-        font-size: 15px;
+        font-size: 8px;
 
     }
     .footer-content i {
         margin-right: 10px;
         color: var(--color-beige);
-        font-size: 21px;
+        font-size: 15px;
     }
     
     .footer-titulo h2{
-        font-size: 35px;
+        font-size: 25px;
     }
 
 
