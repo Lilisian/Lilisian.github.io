@@ -148,6 +148,7 @@ hr {
 
 .imagen_showcase img {
    max-width: 60%;
+    border-radius: 20px;
 
 }
 
