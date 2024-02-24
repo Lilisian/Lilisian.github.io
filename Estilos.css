@@ -660,6 +660,7 @@ hr {
     .imagen_showcase img {
         max-width: 100%; /* Ajusta el ancho de la imagen para dispositivos más pequeños */
         margin-top: 50px;
+        margin-left: 0px;
     }
     
     /* Mi Trabajo */
