@@ -19,9 +19,9 @@ function handleClick(sectionType) {
     }
 
     document.addEventListener('DOMContentLoaded', function() {
-        var imagenes = document.querySelectorAll('.img_subpaginas');
+        var imagenes = document.querySelectorAll('.img__subpaginas');
         var lightbox = document.getElementById('lightbox');
-        var imagenLightbox = document.querySelector('.imagen-lightbox');
+        var imagenLightbox = document.querySelector('.imagen__lightbox');
         var cerrar = document.getElementById('cerrar');
     
         imagenes.forEach(function(imagen) {
@@ -44,10 +44,10 @@ function handleClick(sectionType) {
     
 
     document.addEventListener('DOMContentLoaded', function() {
-        var imagenes = document.querySelectorAll('.img_subpaginas');
+        var imagenes = document.querySelectorAll('.img__subpaginas');
         var lightbox = document.getElementById('lightbox');
-        var imagenLightbox = document.querySelector('.imagen-lightbox');
-        var tituloLightbox = document.querySelector('.titulo-lightbox');
+        var imagenLightbox = document.querySelector('.imagen__lightbox');
+        var tituloLightbox = document.querySelector('.titulo__lightbox');
         var cerrar = document.getElementById('cerrar');
     
         imagenes.forEach(function(imagen) {
@@ -175,10 +175,10 @@ function handleClick(sectionType) {
         });
     
         var lightbox = document.getElementById('lightbox');
-        var imagenLightbox = document.querySelector('.imagen-lightbox');
+        var imagenLightbox = document.querySelector('.imagen__lightbox');
         var cerrar = document.getElementById('cerrar');
-        var flechaIzquierda = document.getElementById('flecha-izquierda');
-        var flechaDerecha = document.getElementById('flecha-derecha');
+        var flechaIzquierda = document.getElementById('flecha__izquierda');
+        var flechaDerecha = document.getElementById('flecha__derecha');
     
         var categorias = {
             ciudad: imagenesCiudad,
@@ -214,7 +214,7 @@ function handleClick(sectionType) {
             categorias[categoria].forEach(function (imagen, index) {
                 var img = new Image();
                 img.src = imagen;
-                img.classList.add('img_subpaginas');
+                img.classList.add('img__subpaginas');
                 img.addEventListener('click', function () {
                     inicializarGaleria(categoria, index);
                     lightbox.style.display = 'flex';
@@ -259,11 +259,11 @@ function handleClick(sectionType) {
 
 
     document.addEventListener('DOMContentLoaded', function () {
-        var menuBtn = document.querySelector('.menu-btn');
-        var navMain = document.querySelector('.nav-main ul');
+        var menuBtn = document.querySelector('.menu__btn');
+        var navMain = document.querySelector('.nav__main ul');
     
         menuBtn.addEventListener('click', function () {
-            navMain.classList.toggle('show-menu');
+            navMain.classList.toggle('show__menu');
         });
     
 

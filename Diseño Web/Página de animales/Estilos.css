@@ -704,10 +704,14 @@ hr {
 
 /* Resposive desing */
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
 	.nav-main {
 		background: none;
 	}
+
+	.menu-btn {
+        display: block;
+    }
 
 	.nav-main__menu {
 		display: grid;
@@ -718,12 +722,25 @@ hr {
 		left: 0;
 		background: var(--color-naranja-fuerte);
 		padding: 30px;
-		height: 40%;
-		text-align: center;
+		height: 100%;
+		transform: translate(-400);
+		transition: trasform .5s ease-in-out;
+		text-align: start;
+		z-index: 1;
 	}
+
+	.nav-main ul.nav-main__menu {
+        transform: translate(-20px);
+    }
 
 	.nav-main__menu .nav-main__li {
 		border-bottom: var(--color-naranja-suave) solid 1px;
 		padding: 25px 0px;
 	}
+
+	.nav-main ul.nav-icon{
+        margin-right: 50px;
+        font-size: 1.3em;
+
+    }
 }

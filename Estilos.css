@@ -9,7 +9,7 @@
 
 
 body{
-    font-family: 'Jost', Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--font-family);
     background-color:var(--color-beige);
 }
 
@@ -18,7 +18,8 @@ body{
     --color-morado:#654E92;
     --color-azul-oscuro: #6C9BCF;
     --color-beige:#F3EDE1; 
-    --color-negro: #000; 
+    --color-negro: #000;
+    --font-family: 'Jost', Georgia, 'Times New Roman', Times, serif;
     
 }
 
@@ -27,13 +28,44 @@ body{
     margin: auto;
 }
 
+.titulo__decoration{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.titulo__h1 {
+    font-size: 5rem;
+    color: var(--color-azul-oscuro);
+    text-align: center;
+    letter-spacing: 2.5px;
+    font-weight:900;
+}
+
+.h1__decoration__1{
+    position: absolute;
+    left: 1050px;
+    bottom: 50px;
+    width: 400px;
+    height: 90px;
+}
+
+.h1__decoration__2{
+    position: absolute;
+    right: 1080px;
+    bottom: 50px;
+    width: 400px;
+    height: 90px;
+}
+
 /* nav principal*/
 
-.menu-btn {
+.menu__btn {
     display: none;
 }
 
-.nav-main{
+.nav__main{
     position: sticky;
     background: var(--color-azul-oscuro);
     text-align: center;
@@ -43,144 +75,113 @@ body{
     top: 0;
 }
 
-.nav-main ul {
+.nav__main ul {
     display: flex;
-    justify-content: space-around; /* Ajusta según sea necesario */
-    align-items: center; /* Ajusta según sea necesario */
+    justify-content: space-around; 
+    align-items: center;
     text-align: center;
     background: var(--color-azul-oscuro);
     color: #fff;
-    padding: 20px;
     border-radius: 0px 10px 10px 10px;
     position: sticky;
     top: 0;
     z-index: 100;
 }
 
-.nav-main_li{
-    padding: 20px 80px;
+.nav__main__li{
+    padding: 15px 80px;
     cursor: pointer;
     margin: 5px;
     color: var(--color-beige);
-    font-size: 23px;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 
-.nav-main_li:hover{
+.nav__main__li:hover{
     background: var(--color-azul-claro);
     border-radius: 15px;
 }
 
-.nav-main_li i {
-    font-size: 29px;
+.nav__main__li i {
+    font-size: 1.7rem;
     margin-right: 12px;
     color: var(--color-beige);
-}
-
-.titulo_decoration{
-    position: relative;
-    width: 100%;
-    height: 100%;
-
-}
-
-.h1_decoration_1{
-    position: absolute;
-    left: 1050px;
-    bottom: 50px;
-    width: 400px;
-    height: 90px;
-}
-
-.h1_decoration_2{
-    position: absolute;
-    right: 1080px;
-    bottom: 50px;
-    width: 400px;
-    height: 90px;
-}
-
-.nav-main_h1 {
-    font-size: 95px;
-    color: var(--color-azul-oscuro);
-    text-align: center;
-    letter-spacing: 2.5px;
-    font-weight:900;
 }
 
 hr {
     margin: 60px;
 }
 
-/* header formación de mi y foto*/
+/* header formación de Silvia Candia y foto*/
 
-.acerca_de_mi{
+.acerca__de__mi{
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+
+}
+
+.showcase{
+    width: 50%;
+    text-align: center;
     background-image: url(Illustrator/Diseño\ 1\ completo\ 1_Mesa\ de\ trabajo\ 1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right 70px;
 }
 
-.showcase{
-    width: 40%;
-    text-align: center;
-}
-
 .showcase p {
-    font-size: 19px;
-    margin-top: 6%;
-    margin-right: 80px;
+    width: 70%;
+    font-size: 1.2rem;
+    margin-left: 70px;
+
 }
 
 .showcase h2 {
-    font-size: 80px;
+    font-size: 5rem;
     margin-right: 70px;
     color:var(--color-morado)
 }
 
-.imagen_showcase{
+.imagen__showcase{
     flex-shrink: 0;
     width: 50%;
 }
 
-.imagen_showcase img {
+.imagen__showcase img {
    max-width: 60%;
    border-radius: 20px;
-   margin-left: 40px;
+   margin-left: 15%;
 
 }
 
-
 /* Sección mi trabajo*/
 
-.article_mi_trabajo {
+.article__mi__trabajo {
     background-image: url(Illustrator/Diseño\ 1-02.png);
     background-repeat: no-repeat;
     background-size:300px;
     background-position: top right;
 }
 
-.article_mi_trabajo h2 {
+.article__mi__trabajo h2 {
     margin-top: 100px;
-    font-size: 80px;
+    font-size: 5rem;
     font-weight: bold;
     text-align:left;
     color:var(--color-morado);
     margin-bottom: 20vh;
 }
 
-.article_mi_trabajo img {
+.article__mi__trabajo img {
     width: 200px;
 }
 
-.section_illus img {
+.section__illus img {
     width: 140px;
 }
 
-.section_comuni img {
+.section__comuni img {
     width: 150px;
 }
 
@@ -191,10 +192,10 @@ hr {
     position: relative;
 }
 
-.section_comuni, .section_html, .section_illus, .section_foto, .section_estudio{
+.section__comuni, .section__html, .section__illus, .section__foto, .section__estudio{
     padding: 20px 5px;
     border-radius: 20px;
-    font-size: 27px;
+    font-size: 1.7rem;
     font-weight: 1000; 
     cursor: pointer;
     background: var(--color-morado);
@@ -203,7 +204,7 @@ hr {
     color: var(--color-beige);
 }
 
-.section_comuni:hover, .section_html:hover, .section_illus:hover, .section_foto:hover, .section_estudio:hover{
+.section__comuni:hover, .section__html:hover, .section__illus:hover, .section__foto:hover, .section__estudio:hover{
     background-color: var(--color-azul-claro);
     outline:5px solid var(--color-beige);
     color: var(--color-morado);
@@ -214,12 +215,12 @@ hr {
     color: var(--color-beige);
 }
 
-.section_html img{
+.section__html img{
     padding-bottom: 18px;
 }
 
 
-.section_img{
+.section__img{
     position: absolute;
     top: 250px;
     width: 400px;
@@ -240,21 +241,21 @@ hr {
     background-position: top right;
 }
 
-.article_curriculum h2{
-    font-size: 80px;
+.article__curriculum h2{
+    font-size: 5rem;
     color: var(--color-morado);
     margin-bottom: 40px;
     font-weight: 900px;
 }
 
-.hoja_vida iframe {
+.hoja__vida iframe {
     display: none;
 }
 
 /*Decoración de las subpáginas*/
 
-.manual_comunicaciones,
-.pdf_brief{
+.manual__comunicaciones,
+.pdf__brief{
     position: relative;
     width: 100%;
     height: 100%;
@@ -264,14 +265,14 @@ hr {
     background-position: right bottom;
 }
 
-.pdf_decoration{
+.pdf__decoration{
     position: absolute;
     right: 1100px;
     bottom: 1px;
     width: 400px;
 }
 
-.descripcion_comunicacion{
+.descripcion__comunicacion{
     position: relative;
     width: 100%;
     height: 100%;
@@ -281,7 +282,7 @@ hr {
     background-position: right bottom;
 }
 
-.decoracion_mercado{
+.decoracion__mercado{
     position: relative;
     width: 100%;
     height: 100%;
@@ -291,7 +292,7 @@ hr {
     background-position: right;
 }
 
-.decoracion_html{
+.decoracion__html{
     position: relative;
     width: 100%;
     height: 100%;
@@ -303,51 +304,58 @@ hr {
 
 /*footer*/
 
-.footer-information{
+.footer__information{
     background-color: var(--color-azul-oscuro);
     width: 100%;
     height: 80%;
-    padding: 30px;
+    padding: 20px;
     text-align: center;
     outline: 20px solid var(--color-azul-claro);
 }
 
-.footer-titulo h2{
+.footer__titulo h2{
     color:var(--color-morado);
     font-weight: bold;
-    font-size: 50px;
-    margin-bottom: 25px;
+    font-size: 3.1rem;
+    margin-bottom: 20px;
 
 }
 
-.footer-content{
+.footer__content{
     display: flex;
     flex-direction: 6 column;
     justify-content: space-around;
 }
 
-.footer-content i {
+.footer__content i {
     margin-right: 10px;
     color: var(--color-beige);
-    font-size: 29px;
+    font-size: 1.8rem;
 }
 
-.footer-content a{
-    color: var(--color-negro);
+.footer__content a{
+    color: var(--color-azul-claro);
 }
 
-.footer-content h3{
-    font-size: 25px;
+.footer__content h3{
+    font-size: 1.5rem;
+    color: var(--color-azul-claro);
 }
 
-.footer-information{
+.footer__content h3:hover{
+    border: 2px solid var(--color-morado);
+    border-radius: 10px;
+    padding: 1px 8px;
+}
+
+.footer__information{
     margin-top: 10%;
 }
 
 
 /*NAV subpaginas funciona para los demás nav comunicaciones, estudio de mercado, fotografía,ilustrator, diseño web*/
 
-.nav_subpagina{
+.nav__subpagina{
     background-color: var(--color-azul-oscuro); 
     border-radius: 15px;
     top: 0;
@@ -357,12 +365,12 @@ hr {
     z-index: 1;
 }
 
-.nav_subpagina a{
+.nav__subpagina a{
     cursor: pointer;
-    font-size: 17px;
+    font-size: 1rem;
 }
 
-.img_title_subpagina{
+.img__title__subpagina{
     width: 50px;
     height: 50px;
     margin-right: 15px;
@@ -371,34 +379,33 @@ hr {
 
 /*Se agregó en la subpágina el nav subp li web e illustrator porque no llevaba el botón de volver al principio*/
 
-.nav_subp_li,
-.nav_subp_li_web,
-.nav_subp_li_illus{
+.nav__subp__li,
+.nav__subp__li__web,
+.nav__subp__li__illus{
     display: inline-block;
     color: var(--color-negro);
-    font-size: 20px;
+    font-size: 1.3rem;
     font-weight: bold;
     vertical-align: middle;
 }
 
-.nav_subp_li h1,
-.nav_subp_li_web h1,
-.nav_subp_li_illus h1{
-    font-size: 30px;
+.nav__subp__li h1,
+.nav__subp__li__web h1,
+.nav__subp__li__illus h1{
+    font-size: 1.9rem;
     margin-right: 300px;
     color: var(--color-beige);
 }
 
-.nav_subp_li_web h1,
-.nav_subp_li_illus h1{
+.nav__subp__li__web h1,
+.nav__subp__li__illus h1{
     margin-right: 700px;
 }
 
-
 /* H2 subpáginas*/
 
-.container_comunicacion h2{
-    font-size: 60px;
+.container__comunicacion h2{
+    font-size: 3.7rem;
     margin: 80px 0px 20px;
     padding: 5px 10px;
     color: var(--color-azul-claro);
@@ -409,8 +416,8 @@ hr {
 }
 
 
-.study_container h2{
-    font-size: 60px;
+.study__container h2{
+    font-size: 3.7rem;
     margin: 80px 0px 20px;
     padding: 5px 10px;
     color: var(--color-azul-claro);
@@ -420,8 +427,8 @@ hr {
     width: 100%;
 }
 
-.Htmlycss_container h2{
-    font-size: 60px;
+.Htmlycss__container h2{
+    font-size: 3.7rem;
     margin: 80px 0px 20px;
     padding: 5px 10px;
     color: var(--color-azul-claro);
@@ -434,9 +441,9 @@ hr {
 
 /* h3 subpáginas*/
 
-.study_container h3,
-.Fotografia_container h3{
-    font-size: 30px;
+.study__container h3,
+.Fotografia__container h3{
+    font-size: 1.9rem;
     margin: 50px 0px 20px;
     padding: 5px 5px;
     color: var(--color-morado);
@@ -449,21 +456,21 @@ hr {
 
 /* Todos los párrafos de las subpáginas están acá*/
 
-.container_comunicacion p,
-.study_container p,
-.Htmlycss_container p{
-    font-size: 25px;
+.container__comunicacion p,
+.study__container p,
+.Htmlycss__container p{
+    font-size: 1.6rem;
     font-weight: bold;
     margin-bottom: 40px;
 }
 
-.Illustrator_container p{
-    font-size: 25px;
+.Illustrator__container p{
+    font-size: 1.6rem;
 }
 
 /* Todas las imagenes de las subpáginas están acá*/
 
-.img_subpaginas{
+.img__subpaginas{
     width: 250px;
     max-width: 100%; 
     height: auto;
@@ -475,21 +482,21 @@ hr {
     margin: 50px 5px 10px 5px;
 }
 
-.Htmlycss_container img{
+.Htmlycss__container img{
     width: 70%;
     border: 5px solid white;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.img_subpaginas:hover,
-.Htmlycss_container img:hover {
+.img__subpaginas:hover,
+.Htmlycss__container img:hover {
     border: 5px solid var(--color-azul-oscuro);
 }
 
 /*Organización de las imagenes en subpáginas*/
 
-.galeria_subpaginas{
+.galeria__subpaginas{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -510,7 +517,7 @@ hr {
     align-items: center;
 }
 
-.imagen-lightbox {
+.imagen__lightbox {
     display: block;
     margin: auto;
     max-width: 80%;
@@ -522,14 +529,14 @@ hr {
     position: absolute;
     top: 15px;
     right: 15px;
-    font-size: 30px;
+    font-size: 1.9rem;
     color: #fff;
     cursor: pointer;
 }
 
-.titulo-lightbox{
+.titulo__lightbox{
     text-align: center;
-    font-size: 30px;
+    font-size: 1.9rem;
     padding: 10px 10px;
     color: var(--color-morado);
     font-weight: bold;
@@ -541,7 +548,7 @@ hr {
 }
 
 .flecha {
-    font-size: 35px;
+    font-size: 2.2rem;
     color: var(--color-beige); 
     background-color:var(--color-azul-claro); 
     padding: 10px;
@@ -558,26 +565,27 @@ hr {
     background-color: var(--color-azul-oscuro); 
 }
 
-#flecha-izquierda {
+#flecha__izquierda {
     left: 10px;
 }
 
-#flecha-derecha {
-    right: 10px; /* Posición a la derecha */
+#flecha__derecha {
+    right: 10px;
 }
 
 /* pdfs los organiza*/
-.pdf_curriculum,
-.pdf_estudiomercado,
-.manual_comunicaciones object{
+
+.pdf__curriculum,
+.pdf__estudiomercado,
+.manual__comunicaciones object{
     width: 65%;
-    height: 100vh; /* Ajusta la altura según tus necesidades */
+    height: 80vh;
     display: block;
-    margin: 0 auto; /* Centra el embed en el contenedor */
+    margin: 0 auto;
 }
 
 
-.manual_comunicaciones p{
+.manual__comunicaciones p{
     display: none;
 }
 
@@ -585,10 +593,113 @@ hr {
     display: none;
 }
 
-/* Estilos específicos para pantallas más pequeñas (hasta 768px) página principal*/
-@media only screen and (max-width: 768px) {
+/*Visulación tablets*/
 
-    .menu-btn {
+@media only screen and (max-width: 1200px) {
+    .titulo__h1{
+        font-size: 4rem;
+    }
+    .h1__decoration__1{
+        left: -90px;
+    }
+    
+    .h1__decoration__2{
+        right: -48px;
+    }
+    .nav__main__li{
+        padding: 5px 10px;
+        margin: 5px;
+    }
+    
+    .showcase p {
+        font-size: 0.90rem;
+        margin-top: 12px;
+    }
+    
+    .showcase h2 {
+        font-size: 3rem;
+        margin: auto;
+    }
+    .article__mi__trabajo {
+        background-size:150px;
+    }
+    
+    .article__mi__trabajo h2 {
+        margin-top: 50px;
+        font-size: 4rem;
+        margin-bottom: 5vh;
+    }
+    
+    .article__mi__trabajo img,     .section__illus img,     .section__comuni img{
+        width: 100px;
+    }
+    
+    .section__img{
+        display: none;
+    }
+
+    .curriculum{
+        margin-top:50px
+    }
+
+    .article__curriculum h2{
+        font-size: 4rem;
+    }
+
+    .footer__information{
+        margin-top: 3%;
+        padding: 5px;
+    }
+    
+    .footer__titulo h2{
+        margin-bottom: 10px;
+        font-size: 2.5rem;
+    
+    }
+    
+    .footer__content h3{
+        font-size: 1.2rem;
+    }
+
+    .nav__subp__li__web h1,
+    .nav__subp__li__illus h1{
+        margin-right: 400px;
+    }
+
+    .container__comunicacion h2, .study__container h2, .Htmlycss__container h2{
+        font-size: 2.5rem;
+    }
+    
+    .container__comunicacion p,
+    .study__container p,
+    .Htmlycss__container p, .Illustrator__container p{
+        font-size: 1.2rem;
+    }
+    
+    .pdf__curriculum,
+    .pdf__estudiomercado,
+    .manual__comunicaciones object{
+        padding: 0px 0px 20px;
+    }
+    
+    
+    .study__container h3,
+    .Fotografia__container h3{
+        font-size: 1.5rem;
+        width: 30%;
+        
+    }
+    
+    .decoracion__html, .decoracion__mercado {
+        background-size:200px;
+    }
+    
+}
+
+/*Visualización telefonos*/
+
+@media only screen and (max-width: 933px) {
+    .menu__btn {
         display: block;
         position: fixed;
         top: 20px;
@@ -601,7 +712,7 @@ hr {
         cursor: pointer;
     }
 
-    .nav-main ul {
+    .nav__main ul {
         position: fixed;
         top: 0;
         left: 0;
@@ -613,82 +724,83 @@ hr {
         transition: transform 0.9s ease-in-out;
     }
 
-    .nav-main ul.show-menu {
+    .nav__main ul.show-menu {
         transform: translateX(0);
 
     }
     
-    .nav-main ul a {
+    .nav__main ul a {
         color: #fff;
     }
     
-    .nav-main_li {
-        padding: 20px 5px; /* Ajusta el padding de los elementos de navegación */
+    .nav__main__li {
+        padding: 20px 5px;
         margin: 2px;
-        font-size: 18px; /* Ajusta el tamaño de fuente de los elementos de navegación */
+        font-size: 1.2rem;
     }
 
-    .nav-main_h1 {
-        font-size: 80px;
+    .titulo__h1 {
+        font-size: 4rem;
     }
-
-    
-    /* Acerca de mí */
-    .acerca_de_mi {
-        flex-direction: column; /* Cambia la dirección de la fila a columna para dispositivos más pequeños */
-        align-items: center; /* Centra los elementos en dispositivos más pequeños */
-        padding: 20px;
+   
+    .acerca__de__mi {
+        flex-direction: column;
+        align-items: center;
+        background-image: url(Illustrator/Diseño\ 1\ completo\ 1_Mesa\ de\ trabajo\ 1.png);
+        background-repeat: no-repeat;
+        background-size: contain;
         background-position: center bottom;
     }
 
 
     .showcase {
-        width: 90%; /* Ajusta el ancho del elemento showcase para dispositivos más pequeños */
+        width: 100%;
+        background-image: none;
     }
     
     .showcase p {
-        font-size: 18px; /* Ajusta el tamaño de fuente para dispositivos más pequeños */
+        font-size: 1.2rem;
         margin-top: 2%;
         margin-right: 0;
     }
     
     .showcase h2 {
-        font-size: 60px; /* Ajusta el tamaño de fuente para dispositivos más pequeños */
+        font-size: 3.7rem;
         margin-right: 0px;
     }
     
-    .imagen_showcase img {
-        max-width: 100%; /* Ajusta el ancho de la imagen para dispositivos más pequeños */
+    .imagen__showcase img {
+        max-width: 100%;
         margin-top: 50px;
         margin-left: 0px;
     }
     
     /* Mi Trabajo */
-    .article_mi_trabajo h2 {
+    .article__mi__trabajo h2 {
         margin-top: 50px;
-        font-size: 60px; /* Ajusta el tamaño de fuente para dispositivos más pequeños */
+        font-size: 3.7rem;
         margin-bottom: 10vh;
     }
     
     /* Sección Mi Trabajo */
     .sections {
-        flex-direction: column; /* Cambia la dirección de la fila a columna para dispositivos más pequeños */
-        align-items: center; /* Centra los elementos en dispositivos más pequeños */
+        flex-direction: column;
+        align-items: center; 
     }
     
-    .section_comuni, .section_html, .section_illus, .section_foto, .section_estudio {
-        padding: 15px 10px; /* Ajusta el padding de los elementos de sección para dispositivos más pequeños */
+    .section__comuni, .section__html, .section__illus, .section__foto, .section__estudio {
+        padding: 15px 10px; 
         margin-bottom: 20px;
-        font-size: 20px; /* Ajusta el tamaño de fuente de los elementos de sección para dispositivos más pequeños */
+        font-size: 1.3rem;
     }
     
     /* Currículum*/
-    .article_curriculum h2 {
-        font-size: 60px; /* Ajusta el tamaño de fuente para dispositivos más pequeños */
+    .article__curriculum h2 {
+        font-size: 3.7rem;
         margin-bottom: 20px;
     }
 
-    .hoja_vida{ 
+    .hoja__vida{ 
         display: block;
         position: relative; 
         width: 100%; 
@@ -702,7 +814,7 @@ hr {
         will-change: transform;
      }
      
-     .hoja_vida iframe{
+     .hoja__vida iframe{
         display: block;
         position: absolute; 
         width: 100%; 
@@ -714,197 +826,179 @@ hr {
         margin: 0;
      }
      
-
     /*Footer*/
 
-    .footer-content h3{
-        font-size: 12px;
-        margin: 2%;
-
+    .footer__information{
+        padding: 5px;
+        outline: 10px solid var(--color-azul-claro);
     }
-    .footer-content i {
+
+    .footer__content h3{
+        font-size: 0.7rem;
+    }
+    .footer__content i {
         margin-right: 10px;
         margin-bottom: 10px;
         color: var(--color-beige);
-        font-size: 18px;
+        font-size: 1.2rem;
     }
     
-    .footer-titulo h2{
-        font-size: 30px;
+    .footer__titulo h2{
+        font-size: 1.5rem;
     }
 
+    .nav__subpagina{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
 
-    @media only screen and (max-width: 768px) {
-
-        .nav_subpagina {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; /* Alinea el contenido en el centro del contenedor */
-        }
-    
-        .nav_subp_li,
-        .nav_subp_li_illus,
-        .nav_subp_li_web {
-            width: 40%;
-            height: 5vh;
-            text-align: center;
-        }
-    
-        .img_title_subpagina {
-            width: 30px;
-            height: 30px;
-            margin-left: -50px;
-        }
-    
-        .nav_subpagina a {
-            cursor: pointer;
-            font-size: 12px;
-            text-align: center;
-        }
-
-        .nav_subp_li h1,
-        .nav_subp_li_web h1,
-        .nav_subp_li_illus h1{
-            font-size: 15px;
-            margin-left: -15px; 
-        }
-
-        .nav_subp_li i {
-            font-size: 16px;
-        }
-
-        .nav_subp_li_web h1,
-        .nav_subp_li_illus h1{
-            display: inline; 
-            margin-right: 1px; 
-        }
-
-        .nav_subp_li_illus i{
-            margin-right: 5px;
-            font-size: 16px;
-        }
-
-           /*H2 subpáginas*/
-        
-        
-        .container_comunicacion h2{
-            font-size: 30px;
-            margin: 40px 0px 10px;
-            padding: 5px 10px;
-            width: 95%;
-        }
-        
-        
-        .study_container h2{
-            font-size: 30px;
-            margin: 40px 0px 10px;
-        }
-        
-        .Htmlycss_container h2{
-            font-size: 30px;
-            margin: 40px 0px 10px;
-            width: 55%;
-        }
-
-           /* h3 subpáginas*/
-        
-        .study_container h3,
-        .Fotografia_container h3{
-            font-size: 20px;
-            margin: 25px 0px 2px;
-            padding: 2px 7px;
-            width: 60%;
-            
-        }
-
-         /* Todos los párrafos de las subpáginas están acá*/
-        
-        .container_comunicacion p,
-        .study_container p,
-        .Htmlycss_container p{
-            font-size: 15px;
-            margin-bottom: 10px;
-        }
-        
-        .Illustrator_container p{
-            font-size: 15px;
-        }
-        
-        .video_estudiomercado {
-            width: 100%;
-        }
-
-        .manual_comunicaciones p{
-            display: block;
-        }
-
-        /*Pdfs organización*/
-
-        .pdf_curriculum,
-        .manual_comunicaciones object,
-        .pdf_estudiomercado{
-             display: none;
-        }
-
-        .brief{
-            display: block;
-            position: relative;
-            width: 100%; 
-            height: 0; 
-            padding-top: 56.2500%;
-            padding-bottom: 0; 
-            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
-            margin-top: 1.6em; 
-            margin-bottom: 0.9em; 
-            overflow: hidden;
-            border-radius: 8px; 
-            will-change: transform;
-        }
-        
-        .brief iframe{
-            display: block;
-            position: absolute; 
-            width: 100%; 
-            height: 100%; 
-            top: 0; 
-            left: 0; 
-            border: none; 
-            padding: 0;
-            margin: 0;
-        }
-
-        /*Decoración de las subpáginas*/
-
-            /*Decoración en responsive*/
-    
-        .h1_decoration_1,
-        .h1_decoration_2,
-        .pdf_decoration,
-        .section_img{
-            display: none;
-        }
-
-        .article_mi_trabajo {
-            background-size:90px;
-        }
-
-        .descripcion_comunicacion{
-            background-image: none;
-        }
-
-        .decoracion_mercado{
-            background-size:100px;
-            background-position: right top;
-        }
-
-        .decoracion_html{
-            background-size:100px;
-            background-position: right bottom;
-        }
-
-        .nav-main_li:hover{
-            padding: 9px;
-        }
+    .nav__subpagina a{
+        font-size: 0.7rem;
     }
     
+    .nav__subp__li h1{
+        font-size: 1.2rem;
+        margin-right: 130px;
+    }
+
+    .nav__subp__li__web h1,
+    .nav__subp__li__illus h1{
+        font-size: 1.2rem;
+        margin-right: 230px;
+    }
+
+    .nav__subp__li i, .nav__subp__li__illus i, .nav__subp__li__web i{
+        font-size: 20px;
+        width: 10px;
+    }
+
+       /*H2 subpáginas*/
+       
+    .container__comunicacion h2{
+        font-size: 1.9rem;
+        margin: 40px 0px 10px;
+        padding: 5px 10px;
+        width: 95%;
+    }
+    
+    
+    .study__container h2{
+        font-size: 1.9rem;
+        margin: 40px 0px 10px;
+    }
+    
+    .Htmlycss__container h2{
+        font-size: 1.9rem;
+        margin: 40px 0px 10px;
+        width: 55%;
+    }
+
+       /* h3 subpáginas*/
+    
+    .study__container h3,
+    .Fotografia__container h3{
+        font-size: 1.3rem;
+        margin: 25px 0px 2px;
+        padding: 2px 7px;
+        width: 60%;
+        
+    }
+
+     /* Todos los párrafos de las subpáginas están acá*/
+    
+    .container__comunicacion p,
+    .study__container p,
+    .Htmlycss__container p{
+        font-size: 0.9rem;
+        margin-bottom: 10px;
+    }
+    
+    .Illustrator__container p{
+        font-size: 0.9rem;
+    }
+    
+    .video__estudiomercado {
+        width: 100%;
+    }
+
+    .manual__comunicaciones p{
+        display: block;
+    }
+
+    /*Pdfs organización*/
+
+    .pdf__curriculum,
+    .manual__comunicaciones object,
+    .pdf__estudiomercado{
+         display: none;
+    }
+
+    .brief{
+        display: block;
+        position: relative;
+        width: 100%; 
+        height: 0; 
+        padding-top: 56.2500%;
+        padding-bottom: 0; 
+        box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); 
+        margin-top: 1.6em; 
+        margin-bottom: 0.9em; 
+        overflow: hidden;
+        border-radius: 8px; 
+        will-change: transform;
+    }
+    
+    .brief iframe{
+        display: block;
+        position: absolute; 
+        width: 100%; 
+        height: 100%; 
+        top: 0; 
+        left: 0; 
+        border: none; 
+        padding: 0;
+        margin: 0;
+    }
+
+    /*Decoración de las subpáginas*/
+
+    .h1__decoration__1{
+        bottom: 50px;
+        width: 200px;
+        height: 90px;
+    }
+    
+    .h1__decoration__2{
+        bottom: 50px;
+        width: 200px;
+        height: 90px;
+    }
+    .pdf__decoration,
+    .section__img{
+        display: none;
+    }
+
+    .article__mi__trabajo {
+        background-size:90px;
+    }
+
+    .descripcion__comunicacion{
+        background-image: none;
+    }
+
+    .decoracion__mercado{
+        background-size:100px;
+        background-position: right top;
+    }
+
+    .decoracion__html{
+        background-size:100px;
+        background-position: right bottom;
+    }
+
+    .nav__main__li:hover{
+        padding: 9px;
+    } 
 }
