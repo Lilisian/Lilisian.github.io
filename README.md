@@ -1,29 +1,41 @@
 # 📄 Mi Portafolio
 
 ## 📖 Descripción
-Este es mi portafolio, donde podrás encontrar una breve descripción de mi perfil profesional, además de los proyectos que he desarrollado tanto para empresas como para estudios a lo largo de mi carrera.
+Bienvenidos este es mi portafolio, donde podrás encontrar una breve descripción de mi perfil profesional, además de los proyectos que he desarrollado tanto para empresas como para estudios a lo largo de mi carrera.
 
 ## 🛠️ Proyectos
-- **Proyecto 1: Nombre del Proyecto**
+- **Sección 1: Comunicación**
   - *Descripción breve del proyecto.*
-  - [Ver Proyecto](https://github.com/tu-usuario/proyecto1) | [Demo en Vivo](https://tu-demo.com/proyecto1)
+  - [Ver Proyecto](https://lilisian.github.io/Comunicaciones.html) 
 
-- **Proyecto 2: Nombre del Proyecto**
+- **Sección 2: Estudio de mercado**
   - *Descripción breve del proyecto.*
-  - [Ver Proyecto](https://github.com/tu-usuario/proyecto2) | [Demo en Vivo](https://tu-demo.com/proyecto2)
+  - [Ver Proyecto](https://lilisian.github.io/Estudio%20de%20mercado.html) 
+ 
+- **Sección 3: Fotografía**
+  - *Descripción breve del proyecto.*
+  - [Ver Proyecto](https://lilisian.github.io/Fotograf%C3%ADa.html) 
 
-*(Añade más proyectos según sea necesario)*
+- **Sección 4: Ilustración**
+  - *Descripción breve del proyecto.*
+  - [Ver Proyecto](https://lilisian.github.io/Illustrator.html) 
+
+- **Sección 5: HTML y CSS**
+  - *Descripción breve del proyecto.*
+  - [Ver Proyecto](https://lilisian.github.io/Html%20y%20Css.html)
 
 ## 📫 Contacto
 **Silvia Liliana Candia Tavera**  
 📧 [lilianacandia16@gmail.com](mailto:lilianacandia16@gmail.com)  
-🔗 [LinkedIn](https://www.linkedin.com/in/tu-perfil) | [GitHub](https://github.com/tu-usuario)
+🔗 [LinkedIn](www.linkedin.com/in/silvia-liliana-candia-tavera-955250186)
 
 ## 🧰 Recursos
 - **HTML**
 - **CSS**
 - **JavaScript**
 - **Git**
+- **Ilustrator**
+- **Canvas**
 
 ## 🚀 Tecnologías
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
