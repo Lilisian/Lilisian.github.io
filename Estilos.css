@@ -308,7 +308,6 @@ hr {
     background-color: var(--color-azul-oscuro);
     width: 100%;
     height: 80%;
-    padding: 20px;
     text-align: center;
     outline: 20px solid var(--color-azul-claro);
 }
@@ -325,6 +324,7 @@ hr {
     display: flex;
     flex-direction: 6 column;
     justify-content: space-around;
+    padding: 5px 0px 15px;
 }
 
 .footer__content i {
@@ -346,10 +346,6 @@ hr {
     border: 2px solid var(--color-morado);
     border-radius: 10px;
     padding: 1px 8px;
-}
-
-.footer__information{
-    margin-top: 10%;
 }
 
 
