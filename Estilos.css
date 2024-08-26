@@ -1035,4 +1035,7 @@ hr {
     .Htmlycss__container h2 {
         font-size: 1.5rem;
     }
+    .footer__content i{
+        margin: auto;
+    }
 }
