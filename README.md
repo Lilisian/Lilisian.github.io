@@ -3,25 +3,32 @@
 ## 📖 Descripción
 Bienvenidos este es mi portafolio, donde podrás encontrar una breve descripción de mi perfil profesional, además de los proyectos que he desarrollado tanto para empresas como para estudios a lo largo de mi carrera.
 
+## 📋 Tabla de Contenidos
+- [Descripción](#descripción)
+- [Proyectos](#proyectos)
+- [Contacto](#contacto)
+- [Recursos](#recursos)
+- [Tecnologías](#tecnologías)
+
 ## 🛠️ Proyectos
 - **Sección 1: Comunicación**
-  - *Descripción breve del proyecto.*
+  - *Comunicaciones diseñadas con el fin de generar flujo en las redes sociales de grupos.*
   - [Ver Proyecto](https://lilisian.github.io/Comunicaciones.html) 
 
 - **Sección 2: Estudio de mercado**
-  - *Descripción breve del proyecto.*
+  - *Estudio de mercado realizado para una empresa de muebles.*
   - [Ver Proyecto](https://lilisian.github.io/Estudio%20de%20mercado.html) 
  
 - **Sección 3: Fotografía**
-  - *Descripción breve del proyecto.*
+  - *Fotografías tomadas empiricamente.*
   - [Ver Proyecto](https://lilisian.github.io/Fotograf%C3%ADa.html) 
 
 - **Sección 4: Ilustración**
-  - *Descripción breve del proyecto.*
+  - *Ilustraciones realizadas utilizando illustrator.*
   - [Ver Proyecto](https://lilisian.github.io/Illustrator.html) 
 
 - **Sección 5: HTML y CSS**
-  - *Descripción breve del proyecto.*
+  - *Proyectos desarrollados utilizando las herramientas de HTML y CSS.*
   - [Ver Proyecto](https://lilisian.github.io/Html%20y%20Css.html)
 
 ## 📫 Contacto
@@ -42,10 +49,5 @@ Bienvenidos este es mi portafolio, donde podrás encontrar una breve descripció
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white)
-
-## 📋 Tabla de Contenidos
-- [Descripción](#descripción)
-- [Proyectos](#proyectos)
-- [Contacto](#contacto)
-- [Recursos](#recursos)
-- [Tecnologías](#tecnologías)
+![Canvas](https://img.shields.io/badge/Canvas-FF6F61?style=flat&logo=canvas&logoColor=white)
+![Adobe Illustrator](https://img.shields.io/badge/Adobe_Illustrator-FF9A00?style=flat&logo=adobe-illustrator&logoColor=white)
