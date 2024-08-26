@@ -8,7 +8,7 @@ Este es mi portafolio, en el podrás encontrar una breve descripción de mi perf
 Silvia Liliana Candia Tavera
 Correo: lilianacandia16@gmail.com
 
-##Recursos 
+## Recursos 
 
 HTML
 CSS
