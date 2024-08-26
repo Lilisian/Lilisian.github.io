@@ -263,7 +263,7 @@ function handleClick(sectionType) {
         var navMain = document.querySelector('.nav__main ul');
     
         menuBtn.addEventListener('click', function () {
-            navMain.classList.toggle('show__menu');
+            navMain.classList.toggle('show-menu');
         });
     
 

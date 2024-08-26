@@ -742,6 +742,10 @@ hr {
     .titulo__h1 {
         font-size: 4rem;
     }
+
+    .h1__decoration__1, .h1__decoration__2{
+        display: none;
+    }
    
     .acerca__de__mi {
         flex-direction: column;
@@ -761,7 +765,7 @@ hr {
     .showcase p {
         font-size: 1.2rem;
         margin-top: 2%;
-        margin-right: 0;
+        margin: auto;
     }
     
     .showcase h2 {
@@ -964,17 +968,6 @@ hr {
 
     /*Decoración de las subpáginas*/
 
-    .h1__decoration__1{
-        bottom: 50px;
-        width: 200px;
-        height: 90px;
-    }
-    
-    .h1__decoration__2{
-        bottom: 50px;
-        width: 200px;
-        height: 90px;
-    }
     .pdf__decoration,
     .section__img{
         display: none;
@@ -1001,4 +994,48 @@ hr {
     .nav__main__li:hover{
         padding: 9px;
     } 
+}
+
+@media only screen and (max-width: 500px){
+    .nav__subpagina a{
+        font-size: 0.5rem;
+    }
+    
+    .nav__subp__li h1{
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+
+    .nav__subp__li__web h1,
+    .nav__subp__li__illus h1{
+        font-size: 1rem;
+        margin-right: 100px;
+    }
+
+    .nav__subp__li i, .nav__subp__li__illus i, .nav__subp__li__web i{
+        font-size: 20px;
+        width: 10px;
+    }
+
+    .titulo__h1 {
+        font-size: 2.5rem;
+    }
+    .showcase h2,
+    .article__mi__trabajo h2,
+    .article__curriculum h2 {
+        font-size: 2rem;
+    }
+    .showcase p{
+        font-size: 1.1rem;
+
+    }
+    .study__container h3,
+    .Fotografia__container h3{
+    font-size: 1.3rem;
+    }
+    .container__comunicacion h2,
+    .study__container h2,
+    .Htmlycss__container h2 {
+        font-size: 1.5rem;
+    }
 }
