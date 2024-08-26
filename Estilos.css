@@ -322,7 +322,7 @@ hr {
 
 .footer__content{
     display: flex;
-    flex-direction: 6 column;
+    flex-direction:10column;
     justify-content: space-around;
     padding: 5px 0px 15px;
 }
@@ -331,7 +331,6 @@ hr {
     margin-right: 10px;
     color: var(--color-beige);
     font-size: 1.8rem;
-
 }
 
 .footer__content a{
@@ -1035,7 +1034,14 @@ hr {
     .Htmlycss__container h2 {
         font-size: 1.5rem;
     }
+
+    .footer__content{
+        display: flex;
+        flex-direction:5 column;
+        justify-content: space-around;
+    }
     .footer__content i{
         margin: auto;
+        padding: 5px 6px 15px;
     }
 }
